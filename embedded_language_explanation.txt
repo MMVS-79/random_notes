@@ -1,0 +1,23 @@
+
+In programming, an embedded language refers to a programming language or domain-specific language (DSL) that is used within another host language. It is "embedded" because it operates as a subset or an extension of the host language, leveraging the host language's features while adding specific capabilities or abstractions for particular tasks.
+
+Characteristics of an Embedded Language:
+1. Dependent on a Host Language: Embedded languages are implemented within the syntax and semantics of the host language.
+2. Tailored for Specific Tasks: They are often designed to simplify or specialize functionality for a specific domain or purpose (e.g., querying data, defining user interfaces, etc.).
+3. Leverages the Host's Features: They benefit from the host language's existing tools, compilers, and runtime environment.
+
+Examples of Embedded Languages:
+1. SQL in Ruby: When you write SQL queries within a Ruby script (e.g., using ActiveRecord in Ruby on Rails), SQL becomes an embedded language within Ruby.
+2. JavaScript in HTML: JavaScript can be considered an embedded language when used inside HTML documents.
+3. Regex in Python: Regular expressions (regex) are often implemented as embedded languages in host languages like Python or Java.
+4. LINQ in C#: LINQ (Language-Integrated Query) is an example of a DSL embedded within C# for querying collections or databases.
+
+Benefits:
+- Simplifies code for specific domains.
+- Reduces boilerplate for repetitive tasks.
+- Leverages the general-purpose capabilities of the host language.
+
+Challenges:
+- Debugging and error handling may be more difficult.
+- Learning curve due to domain-specific syntax or semantics.
+- Potential performance overhead if not well-optimized.
