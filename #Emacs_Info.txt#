@@ -1,0 +1,89 @@
+
+Will Emacs Be Slow on a MacBook Pro M1?
+---------------------------------------
+No, Emacs should run very smoothly on a MacBook Pro with an M1 chip. The M1 processor is extremely powerful and well-optimized for software development tasks, including running lightweight text editors like Emacs. Here's why it will perform well:
+
+1. **Performance of M1 Chip**: The M1 chip has excellent single-core performance, which is beneficial for applications like Emacs that primarily use a single thread.
+
+2. **Universal Build**: Recent versions of Emacs (like Emacs 28 and above) are available as native builds for Apple Silicon (arm64). These versions take full advantage of the M1 architecture for maximum performance.
+
+3. **Low Resource Requirements**: Emacs is lightweight and doesn’t require significant system resources, so it will not strain your MacBook Pro, even with plugins or extensions.
+
+4. **Compatibility**: If you're using an older Emacs build designed for Intel Macs, Rosetta 2 ensures seamless compatibility. However, using a native M1 version will provide even better performance.
+
+       Recommendations
+       - Use the native Emacs build for Apple Silicon. You can install it via Homebrew with:
+```bash
+  brew install --cask emacs
+  ```
+- Alternatively, download the latest prebuilt version of Emacs for macOS M1 from https://emacsformacosx.com.
+
+How to Completely Uninstall Emacs
+---------------------------------
+To completely uninstall Emacs on macOS, follow these steps:
+
+1. **If You Installed Emacs via Homebrew**
+   - Uninstall Emacs:
+     ```bash
+     brew uninstall --cask emacs
+     ```
+   - Remove Residual Configuration Files:
+     ```bash
+     rm -rf ~/.emacs.d ~/.emacs ~/.config/emacs
+     ```
+
+2. **If You Downloaded Emacs as a Standalone App**
+   - Delete the Application:
+     - Go to your `Applications` folder.
+     - Find the Emacs app, then right-click and select **Move to Trash** (or drag it to the Trash).
+   - Remove Configuration Files:
+     ```bash
+     rm -rf ~/.emacs.d ~/.emacs ~/.config/emacs
+     ```
+
+3. **If You Built Emacs from Source**
+   - Remove the Binary:
+     ```bash
+     sudo make uninstall
+     ```
+   - Remove Configuration Files:
+     ```bash
+     rm -rf ~/.emacs.d ~/.emacs ~/.config/emacs
+     ```
+   - Delete Build Files:
+     ```bash
+     rm -rf ~/src/emacs
+     ```
+
+4. **Remove Related Cache and Preferences**
+   Check for leftover files in:
+   - **Cache**: `~/Library/Caches`
+   - **Preferences**: `~/Library/Preferences`
+   - **Application Support**: `~/Library/Application Support`
+   - Delete them, e.g.:
+     ```bash
+     rm -rf ~/Library/Caches/org.gnu.Emacs
+     rm -rf ~/Library/Preferences/org.gnu.Emacs.plist
+     rm -rf ~/Library/Application\ Support/Emacs
+     ```
+
+Will `brew install --cask emacs` Add an Application?
+----------------------------------------------------
+Yes, running `brew install --cask emacs` will install Emacs as a macOS application. Here's what happens:
+
+1. **Application Installation**: 
+   - It installs Emacs as a `.app` file in your `/Applications` folder (or the equivalent Homebrew Cask apps directory).
+   - You can launch Emacs like any other macOS app by clicking on it in the Finder or Spotlight.
+
+2. **Command-Line Access**: 
+   - Homebrew adds Emacs to your system’s PATH, so you can also run it from the terminal by typing `emacs`.
+   - This command opens the Emacs app in its graphical user interface (GUI) mode.
+
+3. **Optional Terminal Version**:
+   - If you want a terminal-only version of Emacs (running directly in the terminal without a GUI), you can install it with:
+     ```bash
+     brew install emacs
+     ```
+   - This version will not create a macOS app but lets you run Emacs in the terminal by typing `emacs`.
+
+

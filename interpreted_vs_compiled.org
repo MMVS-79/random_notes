@@ -1,0 +1,52 @@
+* Interpreted vs. Compiled Languages
+
+** 🧠 Compiled Language
+- Translation happens *before* runtime.
+- A *compiler* takes your source code (e.g., C, Rust, Go) and translates it into *machine code* (binary/executable).
+- That machine code can then be run *directly by the operating system*, no interpreter needed.
+
+*** Example:
+#+begin_src shell
+gcc program.c -o program  // Compilation step
+./program                 // Executable runs directly
+#+end_src
+
+*** Pros:
+- Fast execution (already machine code)
+- Better performance optimizations
+- Early error detection (compile-time)
+
+*** Cons:
+- Slower development cycle (need to recompile after every change)
+- Less flexible (harder to support dynamic behavior)
+
+** 🧠 Interpreted Language
+- Translation happens *during* runtime.
+- An *interpreter* reads and executes the source code *line by line* (or bytecode, depending on the language).
+- No separate compilation step; the code is run "as-is" (or with lightweight prep like converting to bytecode).
+
+*** Example:
+#+begin_src shell
+ruby my_script.rb  // Interpreter runs the script
+#+end_src
+
+*** Pros:
+- Easy to test and debug
+- Faster development cycle
+- Often more dynamic and flexible
+
+*** Cons:
+- Slower execution
+- Errors may only show up at runtime
+
+** 👀 But in reality…
+- Most modern "interpreted" languages (like Ruby, Python, JavaScript) *compile to bytecode* first, then interpret that — or even JIT compile to machine code at runtime.
+- So the line is a bit blurry now.
+
+** 🔑 Main Distinction
+- *Compiled:* Translated to machine code ahead of time.
+- *Interpreted:* Translated during execution.
+
+** 🎵 Analogy
+Compiled languages are like *pre-recorded music* (ready to play),  
+Interpreted languages are like *live performances* (played on the spot).
