@@ -1,0 +1,1 @@
+ A variable in Java is a named storage location that holds either a primitive data value or a reference to an object in memory.
