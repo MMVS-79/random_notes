@@ -1,0 +1,68 @@
+* Java Project Structure in VS Code
+
+This guide shows how to organize a simple Java project in Visual Studio Code, including folder setup, example code, and compilation steps.
+
+** 📁 Folder Structure
+#+begin_src text
+MyProject/
+├── src/
+│   └── com/
+│       └── example/
+│           ├── MainApp.java
+│           └── Greeter.java
+├── bin/                  # Compiled .class files (created by javac)
+└── .vscode/              # VS Code settings (optional)
+#+end_src
+
+** Example Java Files
+
+*** src/com/example/MainApp.java
+#+begin_src java
+package com.example;
+
+import com.example.Greeter;
+
+public class MainApp {
+    public static void main(String[] args) {
+        Greeter greeter = new Greeter();
+        greeter.sayHello();
+    }
+}
+#+end_src
+
+*** src/com/example/Greeter.java
+#+begin_src java
+package com.example;
+
+public class Greeter {
+    public void sayHello() {
+        System.out.println("Hello from Greeter!");
+    }
+}
+#+end_src
+
+** 🛠️ Compiling and Running from the Command Line
+
+*** Step 1: Compile
+#+begin_src sh
+javac -d bin src/com/example/*.java
+#+end_src
+- `-d bin` tells `javac` to place the compiled `.class` files into the `bin/` directory.
+
+*** Step 2: Run
+#+begin_src sh
+java -cp bin com.example.MainApp
+#+end_src
+- `-cp bin` sets the classpath.
+- `com.example.MainApp` is the fully qualified class name.
+
+** Best Practices
+- Always define packages (e.g., `com.example`) — avoid the default package.
+- Use `src/` for source files, `bin/` for compiled files.
+- For larger projects, use Maven or Gradle.
+- Use the **Java Extension Pack** in VS Code for auto-complete, linting, and debugging.
+
+**  Optional VS Code Setup
+1. Install the **Java Extension Pack** in VS Code.
+2. Use `.vscode/launch.json` for debug/run configs.
+3. Add `.vscode/settings.json` to define your source and output folders.
