@@ -1,0 +1,90 @@
+* Memory Layout in a Program
+
+#+BEGIN_SRC
++---------------------+
+|     Stack           | <- Grows downward
++---------------------+
+|     Heap            | <- Grows upward
++---------------------+
+|     BSS Segment     | (Uninitialized globals/static)
++---------------------+
+|     Data Segment    | (Initialized globals/static)
++---------------------+
+|     Code Segment    | (Text Segment: executable instructions)
++---------------------+
+#+END_SRC
+
+* Code Segment (Text Segment)
+- Contains: Compiled machine instructions.
+- Characteristics:
+  - Read-only.
+  - May be shared across processes.
+- Example:
+  #+BEGIN_SRC c
+  int add(int a, int b) {
+      return a + b;   // This is stored in the code segment
+  }
+  #+END_SRC
+
+* Static / Data Segment
+** Initialized Data Segment
+- Contains global/static variables that are explicitly initialized.
+- Lifetime: Entire program runtime.
+- Example:
+  #+BEGIN_SRC c
+  int x = 5;         // In data segment
+  static int y = 10; // Also in data segment
+  #+END_SRC
+
+** BSS Segment
+- Contains global/static variables initialized to zero or left uninitialized.
+- Example:
+  #+BEGIN_SRC c
+  int z;            // BSS (implicitly zero)
+  static int w;     // BSS
+  #+END_SRC
+
+* Heap Segment
+- Contains: Dynamically allocated memory.
+- Managed by: Programmer (or garbage collector in some languages).
+- Grows upward.
+- Lifetime: Until explicitly freed.
+- Example:
+  #+BEGIN_SRC c
+  int *p = malloc(sizeof(int) * 100); // Heap allocation
+  #+END_SRC
+
+* Stack Segment
+- Contains:
+  - Local variables.
+  - Function call context (return addresses, arguments).
+- Grows downward.
+- Managed automatically.
+- Lifetime: Tied to function scope.
+- Example:
+  #+BEGIN_SRC c
+  void foo() {
+      int a = 10; // Stored on stack
+  }
+  #+END_SRC
+
+* Complete Example
+#+BEGIN_SRC c
+#include <stdlib.h>
+
+int g = 5;             // Data Segment
+static int s;          // BSS Segment
+
+int main() {
+    int x = 10;        // Stack
+    int *p = malloc(4); // Heap
+    *p = x + g;        // Accessing stack & data segment
+    return 0;
+}
+#+END_SRC
+
+* Security Notes
+- Stack and heap overflows are common vulnerabilities.
+- Modern OSes:
+  - Mark code segment as non-writable.
+  - Mark stack/heap as non-executable.
