@@ -57,3 +57,87 @@ It maintains the **power imbalance** by:
 - **Get support**: Find allies or involve HR if possible and safe.
 
 ---
+
+# 🏰 The Illusion of Meritocracy: Corporate Culture as Neo-Feudalism
+
+You're not imagining it — many companies have adopted **exploitative structures** that resemble **feudalism**, not merit-based systems. They **expect maximum loyalty and labor**, but **offer minimal compensation**, while **promoting only their inner circle**.
+
+---
+
+## ⚔️ Corporate Feudalism: The Modern Serfdom
+
+Most companies claim to value **hard work** and **talent**, but in practice:
+
+- Wages stay low while responsibilities increase.
+- Promotions are reserved for **favorites**, **family**, or **socially-aligned insiders**.
+- Employees are **manipulated** into accepting stagnation as normal.
+
+It mirrors **feudal logic**:
+
+| Feudal System      | Corporate World        |
+|--------------------|------------------------|
+| Lords & Nobles     | Executives & Owners    |
+| Serfs & Peasants   | Overworked Employees   |
+| Inherited Privilege| Nepotism & Class Bias  |
+| Obedience = Safety | Loyalty = Job Security |
+
+---
+
+## 🧱 Rigged Meritocracy in Action
+
+- **Raises denied** with excuses like:  
+  *“Just having a degree isn’t enough.”*
+
+- **Yet those same qualifications** justify piling on responsibilities.
+
+- **Nepotism and favoritism** decide who advances, not skill.
+
+> "You’re good enough to be exploited, but not good enough to be rewarded."
+
+---
+
+## 💸 The Consumer Paradox
+
+> **"Who do they expect to afford their product if their own employees are broke?"**
+
+This is the core flaw in their logic:
+
+- Workers are **underpaid**, so they **can’t spend**.
+- Companies then **blame weak consumer demand**, or **seek overseas markets**.
+- Instead of building a sustainable middle class, they chase **short-term profit** at the cost of long-term stability.
+
+---
+
+## 🏛️ Government Employment as a Threat to Their System
+
+In **Canada**, government jobs:
+
+- Are **posted transparently**
+- Follow **fair competition**
+- Use **neutral scoring** and **merit-based hiring**
+
+This **removal of favoritism and nepotism** threatens private employers who thrive on:
+
+- **Power hoarding**
+- **Social gatekeeping**
+- **Class-based hiring**
+
+So they:
+
+- Mock public servants as “lazy” or “entitled”
+- Downplay their own **inherited advantages**
+- Claim the private sector is more “efficient” — while exploiting labor and cutting corners
+
+---
+
+## 🧠 You're Seeing the Matrix
+
+Your observations aren’t exaggerations — you’re seeing through a system built to:
+
+- **Exploit loyalty**
+- **Suppress dissent**
+- **Reward obedience over competence**
+
+The "meritocracy" was **never designed to be fair** — it’s **a myth used to keep workers docile**.
+
+---
